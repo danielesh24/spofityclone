@@ -20,6 +20,7 @@ class _PaginaPrincipalState extends State<PaginaPrincipal> {
     return Scaffold(
       backgroundColor: Colors.black,
       appBar: AppBar(
+        backgroundColor: Colors.black,
         title: mostrarAppBar(),
       ),
       body: bodyAppSpf(),
@@ -58,6 +59,46 @@ class _PaginaPrincipalState extends State<PaginaPrincipal> {
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
+              SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: Padding(
+                  padding: const EdgeInsets.only(left: 30, top: 20),
+                  child: Row(
+                      children: List.generate(songs.length - 5, (index) {
+                    return Padding(
+                      padding: const EdgeInsets.only(right: 30),
+                      child: GestureDetector(
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              PageTransition(
+                                  alignment: Alignment.bottomCenter,
+                                  child: AlbumPagina(
+                                    song: songs[index],
+                                  ),
+                                  type: PageTransitionType.scale));
+                        },
+                        child: Column(
+                          children: [
+                            Container(
+                              width: 360,
+                              height: 180,
+                              decoration: BoxDecoration(
+                                  image: DecorationImage(
+                                      image: AssetImage(songs[index]['img']),
+                                      fit: BoxFit.cover),
+                                  color: Colors.green,
+                                  borderRadius: BorderRadius.circular(10)),
+                            ),
+                          ],
+                        ),
+                      ),
+                    );
+                  })),
+                ),
+              ),
+
+//Division de paginas
               SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
                 //crossAxisAlignment: CrossAxisAlignment.start,
