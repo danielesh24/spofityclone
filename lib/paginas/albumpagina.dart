@@ -100,7 +100,7 @@ class _AlbumPaginaState extends State<AlbumPagina> {
             child: Padding(
               padding: const EdgeInsets.only(left: 30, top: 200),
               child: Row(
-                children: List.generate(songs.length, (index) {
+                children: List.generate(animals.length, (index) {
                   return Padding(
                     padding: const EdgeInsets.only(right: 30, top: 200),
                     child: GestureDetector(
@@ -109,10 +109,10 @@ class _AlbumPaginaState extends State<AlbumPagina> {
                               context,
                               PageTransition(
                                   child: CancionesDetalle(
-                                    title: songs[index]['title'],
-                                    description: songs[index]['description'],
-                                    img: songs[index]['img'],
-                                    songUrl: songs[index]['song_url'],
+                                    title: animals[index]['title'],
+                                    description: animals[index]['description'],
+                                    img: animals[index]['img'],
+                                    songUrl: animals[index]['song_url'],
                                   ),
                                   type: PageTransitionType.scale));
                         },
@@ -158,39 +158,16 @@ class _AlbumPaginaState extends State<AlbumPagina> {
                       SizedBox(
                         height: 30,
                       ),
-                      Container(
-                        width: (tamanio.width - 60) * 0.77,
-                        child: Text(
-                          "${index + 1}  " + songAlbums[index]['title'],
-                          style: TextStyle(color: Colors.white),
-                        ),
-                      ),
-                      Container(
-                        width: (tamanio.width - 60) * 0.23,
-                        height: 50,
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            Text(
-                              songAlbums[index]['duration'],
-                              style:
-                                  TextStyle(color: Colors.grey, fontSize: 14),
-                            ),
-                            Container(
-                              width: 25,
-                              height: 25,
-                              decoration: BoxDecoration(
-                                shape: BoxShape.circle,
-                                color: Colors.grey.withOpacity(0.8),
-                              ),
-                              child: Center(
-                                  child: Icon(
-                                Icons.play_arrow,
-                                color: Colors.white,
-                                size: 16,
-                              )),
-                            )
-                          ],
+                      Align(
+                        alignment: Alignment.bottomCenter,
+                        child: Container(
+                          width: (tamanio.width - 60),
+                          padding: EdgeInsets.only(left: 2, right: 2, top: 20),
+                          child: Text(
+                            "${index + 1}  " + songAlbums[index]['title'],
+                            textAlign: TextAlign.center,
+                            style: TextStyle(color: Colors.white),
+                          ),
                         ),
                       ),
                     ],

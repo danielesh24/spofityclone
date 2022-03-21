@@ -64,7 +64,7 @@ class _PaginaPrincipalState extends State<PaginaPrincipal> {
                 child: Padding(
                   padding: const EdgeInsets.only(left: 30, top: 20),
                   child: Row(
-                      children: List.generate(songs.length - 5, (index) {
+                      children: List.generate(animals.length - 5, (index) {
                     return Padding(
                       padding: const EdgeInsets.only(right: 30),
                       child: GestureDetector(
@@ -74,7 +74,7 @@ class _PaginaPrincipalState extends State<PaginaPrincipal> {
                               PageTransition(
                                   alignment: Alignment.bottomCenter,
                                   child: AlbumPagina(
-                                    song: songs[index],
+                                    song: animals[index],
                                   ),
                                   type: PageTransitionType.scale));
                         },
@@ -85,7 +85,7 @@ class _PaginaPrincipalState extends State<PaginaPrincipal> {
                               height: 180,
                               decoration: BoxDecoration(
                                   image: DecorationImage(
-                                      image: AssetImage(songs[index]['img']),
+                                      image: AssetImage(animals[index]['img']),
                                       fit: BoxFit.cover),
                                   color: Colors.green,
                                   borderRadius: BorderRadius.circular(10)),
@@ -105,7 +105,7 @@ class _PaginaPrincipalState extends State<PaginaPrincipal> {
                 child: Padding(
                   padding: const EdgeInsets.only(left: 30, top: 20),
                   child: Row(
-                      children: List.generate(song_type_1.length, (index) {
+                      children: List.generate(animals_type_1.length, (index) {
                     return Padding(
                       padding: const EdgeInsets.only(right: 25),
                       child: GestureDetector(
@@ -118,7 +118,7 @@ class _PaginaPrincipalState extends State<PaginaPrincipal> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
-                              song_type_1[index],
+                              animals_type_1[index],
                               style: TextStyle(
                                   //color: Colors.grey,
                                   fontSize: 15,
@@ -156,7 +156,7 @@ class _PaginaPrincipalState extends State<PaginaPrincipal> {
             child: Padding(
               padding: const EdgeInsets.only(left: 30),
               child: Row(
-                  children: List.generate(songs.length - 5, (index) {
+                  children: List.generate(animals.length - 5, (index) {
                 return Padding(
                   padding: const EdgeInsets.only(right: 30),
                   child: GestureDetector(
@@ -166,7 +166,7 @@ class _PaginaPrincipalState extends State<PaginaPrincipal> {
                           PageTransition(
                               alignment: Alignment.bottomCenter,
                               child: AlbumPagina(
-                                song: songs[index],
+                                song: animals[index],
                               ),
                               type: PageTransitionType.scale));
                       /*AlbumPagina;*/
@@ -180,7 +180,7 @@ class _PaginaPrincipalState extends State<PaginaPrincipal> {
                           height: 180,
                           decoration: BoxDecoration(
                               image: DecorationImage(
-                                  image: AssetImage(songs[index]['img']),
+                                  image: AssetImage(animals[index]['img']),
                                   fit: BoxFit.cover),
                               color: Colors.green,
                               borderRadius: BorderRadius.circular(10)),
@@ -189,7 +189,7 @@ class _PaginaPrincipalState extends State<PaginaPrincipal> {
                           height: 20,
                         ),
                         Text(
-                          songs[index]['title'],
+                          animals[index]['title'],
                           style: TextStyle(
                               fontSize: 15,
                               color: Colors.white,
@@ -201,7 +201,7 @@ class _PaginaPrincipalState extends State<PaginaPrincipal> {
                         Container(
                           width: 180,
                           child: Text(
-                            songs[index]['description'],
+                            animals[index]['description'],
                             maxLines: 1,
                             textAlign: TextAlign.center,
                             style: TextStyle(
@@ -227,7 +227,7 @@ class _PaginaPrincipalState extends State<PaginaPrincipal> {
               child: Padding(
                 padding: const EdgeInsets.only(left: 30, top: 20),
                 child: Row(
-                    children: List.generate(song_type_2.length, (index) {
+                    children: List.generate(animals_type_2.length, (index) {
                   return Padding(
                     padding: const EdgeInsets.only(right: 25),
                     child: GestureDetector(
@@ -240,7 +240,7 @@ class _PaginaPrincipalState extends State<PaginaPrincipal> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            song_type_2[index],
+                            animals_type_2[index],
                             style: TextStyle(
                                 //color: Colors.grey,
                                 fontSize: 15,
@@ -280,7 +280,7 @@ class _PaginaPrincipalState extends State<PaginaPrincipal> {
             child: Padding(
               padding: const EdgeInsets.only(left: 30),
               child: Row(
-                  children: List.generate(songs.length - 5, (index) {
+                  children: List.generate(animals.length - 5, (index) {
                 return Padding(
                   padding: const EdgeInsets.only(right: 30),
                   child: GestureDetector(
@@ -290,7 +290,7 @@ class _PaginaPrincipalState extends State<PaginaPrincipal> {
                           PageTransition(
                               alignment: Alignment.bottomCenter,
                               child: AlbumPagina(
-                                song: songs[index + 5],
+                                song: animals[index + 5],
                               ),
                               type: PageTransitionType.scale));
                     },
@@ -301,7 +301,7 @@ class _PaginaPrincipalState extends State<PaginaPrincipal> {
                           height: 180,
                           decoration: BoxDecoration(
                               image: DecorationImage(
-                                  image: AssetImage(songs[index + 5]['img']),
+                                  image: AssetImage(animals[index + 5]['img']),
                                   fit: BoxFit.cover),
                               color: Colors.green,
                               borderRadius: BorderRadius.circular(10)),
@@ -310,7 +310,7 @@ class _PaginaPrincipalState extends State<PaginaPrincipal> {
                           height: 20,
                         ),
                         Text(
-                          songs[index + 5]['title'],
+                          animals[index + 5]['title'],
                           style: TextStyle(
                               fontSize: 15,
                               color: Colors.white,
@@ -322,7 +322,7 @@ class _PaginaPrincipalState extends State<PaginaPrincipal> {
                         Container(
                           width: 180,
                           child: Text(
-                            songs[index + 5]['description'],
+                            animals[index + 5]['description'],
                             maxLines: 1,
                             textAlign: TextAlign.center,
                             style: TextStyle(

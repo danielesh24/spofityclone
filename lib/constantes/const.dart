@@ -1,14 +1,13 @@
 import 'package:spofityclone/paginas/principal_app.dart';
 
-const List song_type_1 = [
-  "Music",
-  "Rock",
-  "Soul",
-  "Classic",
-  "Pop",
-  "R&B",
+const List animals_type_1 = [
+  "Mamiferos",
+  "Reptiles",
+  "Anfibios",
+  "peces",
+  "Aves",
 ];
-const List song_type_2 = [
+const List animals_type_2 = [
   "Podcasts",
   "Made For You",
   "Charts",
@@ -16,175 +15,145 @@ const List song_type_2 = [
   "Discover",
   "Concerts",
 ];
-const List songs = [
+const List animals = [
   {
     "img": "../assets/images/img_3.jpg",
-    "title": "Feelin' Good",
-    "description": "Feel good with this positively timeless playlist!",
+    "title": "Tigres",
+    "description": "exiten 6 subespecies de tigres",
     "song_count": "100 songs",
     "date": "about 19 hr",
     "song_url": "songs/1.mp3",
     "songs": [
-      {"title": "Imagination", "duration": "1:21"},
-      {"title": "Home_", "duration": "2:17"},
-      {"title": "Do I Wanna Know?", "duration": "1:31"},
-      {"title": "Whiskey Sour", "duration": "1:42"},
-      {"title": "Decisions", "duration": "1:29"},
-      {"title": "Trees", "duration": "1:51"},
-      {"title": "Earth", "duration": "1:39"},
+      {
+        "title":
+            "Es un animal solitario y territorial que generalmente suele habitar bosques densos, pero también áreas abiertas, como sabanas."
+      },
     ]
   },
   {
     "img": "../assets/images/img_5.jpg",
-    "title": "Peaceful Piano",
-    "description": "Relax and indulge with beautiful piano pieces",
+    "title": "Lobos",
+    "description": " mide entre 1,30 y 2 metros de largo.",
     "song_count": "324 songs",
     "date": "about 14 hr",
     "song_url": "songs/2.mp3",
     "songs": [
-      {"title": "Kaleidoscope", "duration": "2:01"},
-      {"title": "Larks", "duration": "2:54"},
-      {"title": "Homeland", "duration": "2:22"},
-      {"title": "Une Danse", "duration": "3:03"},
-      {"title": "Almonte", "duration": "2:31"},
-      {"title": "Days Like These", "duration": "4:09"},
-      {"title": "In questo momento", "duration": "2:40"},
+      {
+        "title":
+            "El lobo es una especie de mamífero placentario del orden de los carnívoros. El perro doméstico se consideraba miembro de la misma especie según distintos indicios, la secuencia del ADN y otros estudios genéticos"
+      }
     ]
   },
   {
     "img": "../assets/images/img_7.jpg",
-    "title": "Deep Focus",
-    "description": "Keep calm and focus with ambient and post-rock music.",
+    "title": "Ardillas",
+    "description": "200 especies de ardillas viven en todo el mundo",
     "song_count": "195 songs",
     "date": "about 10 hr",
     "song_url": "songs/1.mp3",
     "songs": [
-      {"title": "Escaping Time", "duration": "3:20"},
-      {"title": "Just Look at You", "duration": "3:07"},
-      {"title": "Flowing", "duration": "2:11"},
-      {"title": "With Resolve", "duration": "2:09"},
-      {"title": "Infinite Sustain", "duration": "2:29"},
-      {"title": "Ingénue", "duration": "2:38"},
-      {"title": "Hidden Chambers", "duration": "2:49"},
+      {
+        "title":
+            "Se llama ardilla a ciertas especies de roedores esciuromorfos de la familia Sciuridae, entre las que se encuentran: Las especies del género Ratufa, el único de la subfamilia Ratufinae. La ardilla pigmea neotropical, la única especie de la subfamilia Sciurillinae. Las especies de la subfamilia Sciurinae."
+      }
     ]
   },
   {
     "img": "../assets/images/img_4.jpg",
-    "title": "Lo-Fi Beats",
-    "description": "Beats to relax, study and focus.",
+    "title": "venados",
+    "description": " Viven en grupos pequeños (2-6) ",
     "song_count": "599 songs",
     "date": "about 21 hr",
     "song_url": "songs/2.mp3",
     "songs": [
-      {"title": "Imagination", "duration": "1:21"},
-      {"title": "Home_", "duration": "2:17"},
-      {"title": "Do I Wanna Know?", "duration": "1:31"},
-      {"title": "Whiskey Sour", "duration": "1:42"},
-      {"title": "Decisions", "duration": "1:29"},
-      {"title": "Trees", "duration": "1:51"},
-      {"title": "Earth", "duration": "1:39"},
+      {
+        "title":
+            "Los cérvidos son una familia de mamíferos rumiantes que incluye los ciervos o venados. Su tamaño es variable, siendo el alce el mayor, y el venadito o pudú del norte, el menor, con unos 8 o 10 kg."
+      }
     ]
   },
   {
     "img": "../assets/images/img_2.jpg",
-    "title": "Chill Lofi Study Beats",
-    "description": "The perfect study beats, twenty four seven.",
+    "title": "Caballos",
+    "description": "Promedio de vida un caballo: 25 – 30 años",
     "song_count": "317 songs",
     "date": "about 11 hr",
     "song_url": "songs/1.mp3",
     "songs": [
-      {"title": "Imagination", "duration": "1:21"},
-      {"title": "Home_", "duration": "2:17"},
-      {"title": "Do I Wanna Know?", "duration": "1:31"},
-      {"title": "Whiskey Sour", "duration": "1:42"},
-      {"title": "Decisions", "duration": "1:29"},
-      {"title": "Trees", "duration": "1:51"},
-      {"title": "Earth", "duration": "1:39"},
+      {
+        "title":
+            "El caballo ​​es un mamífero perisodáctilo domesticado de la familia de los équidos. Es un herbívoro perisodáctilo de gran porte, y cuello largo y arqueado poblado por largas crines. La mayoría de los animales que pastan tienen la pata hendida, es decir, sus patas terminan en dos dedos con casco."
+      }
     ]
   },
   {
     "img": "../assets/images/img_6.jpg",
-    "title": "Chill Hits",
-    "description": "Kick back to the best new and recent chill tunes.",
+    "title": "Gatos",
+    "description": "Los gatos se comunican marcando árboles",
     "song_count": "130 songs",
     "date": "about 7 hr",
     "song_url": "songs/2.mp3",
     "songs": [
-      {"title": "Imagination", "duration": "1:21"},
-      {"title": "Home_", "duration": "2:17"},
-      {"title": "Do I Wanna Know?", "duration": "1:31"},
-      {"title": "Whiskey Sour", "duration": "1:42"},
-      {"title": "Decisions", "duration": "1:29"},
-      {"title": "Trees", "duration": "1:51"},
-      {"title": "Earth", "duration": "1:39"},
+      {
+        "title":
+            "El gato doméstico​​, llamado más comúnmente gato, y de forma coloquial minino, ​ michino, ​ michi, ​ micho, ​ mizo, ​ miz, ​ morroño​ o morrongo, ​ y algunos nombres más, es un mamífero carnívoro de la familia Felidae. Es una subespecie domesticada por la convivencia con el ser humano"
+      }
     ]
   },
   {
     "img": "../assets/images/img_1.jpg",
-    "title": "Dark & Stormy",
-    "description": "Beautifully dark, dramatic tracks.",
+    "title": "Grullas",
+    "description": "Es un ave migratoria que cría en el norte de Eurasia.",
     "song_count": "50 songs",
     "date": "about 17 hr",
     "song_url": "songs/1.mp3",
     "songs": [
-      {"title": "Kaleidoscope", "duration": "2:01"},
-      {"title": "Larks", "duration": "2:54"},
-      {"title": "Homeland", "duration": "2:22"},
-      {"title": "Une Danse", "duration": "3:03"},
-      {"title": "Almonte", "duration": "2:31"},
-      {"title": "Days Like These", "duration": "4:09"},
-      {"title": "In questo momento", "duration": "2:40"},
+      {
+        "title":
+            "Los gruidos son una familia de aves gruiformes conocidas vulgarmente como grullas. Son aves de lugares abiertos. Se desplazan dando zancadas con sus largas patas y recogen semillas e insectos con su largo pico. Viven en bandadas y muchas de ellas recorren largas distancias para criar."
+      }
     ]
   },
   {
     "img": "../assets/images/img_8.jpg",
-    "title": "Feel Good Piano",
-    "description": "Positive piano music",
+    "title": "Guacamayo",
+    "description": "Es una ave perteneciente a Honduras",
     "song_count": "69 songs",
     "date": "2 hr 14 min",
     "song_url": "songs/2.mp3",
     "songs": [
-      {"title": "Escaping Time", "duration": "3:20"},
-      {"title": "Just Look at You", "duration": "3:07"},
-      {"title": "Flowing", "duration": "2:11"},
-      {"title": "With Resolve", "duration": "2:09"},
-      {"title": "Infinite Sustain", "duration": "2:29"},
-      {"title": "Ingénue", "duration": "2:38"},
-      {"title": "Hidden Chambers", "duration": "2:49"},
+      {
+        "title":
+            "El guacamayo escarlata, ​​​ o guacamayo bandera es una especie de ave perteneciente a la familia de los psitácidos y ave nacional de la República de Honduras."
+      }
     ]
   },
   {
     "img": "../assets/images/img_9.jpg",
-    "title": "Sad Songs",
-    "description": "Beautiful songs to break your heart...",
+    "title": "Oso Panda",
+    "description": "mamífero del orden de los carnívoros.",
     "song_count": "60 songs",
     "date": "3 hr 25 min",
     "song_url": "songs/1.mp3",
     "songs": [
-      {"title": "Imagination", "duration": "1:21"},
-      {"title": "Home_", "duration": "2:17"},
-      {"title": "Do I Wanna Know?", "duration": "1:31"},
-      {"title": "Whiskey Sour", "duration": "1:42"},
-      {"title": "Decisions", "duration": "1:29"},
-      {"title": "Trees", "duration": "1:51"},
-      {"title": "Earth", "duration": "1:39"},
+      {
+        "title":
+            "El panda, oso panda o panda gigante es una especie de mamífero del orden de los carnívoros. El estudio de su ADN lo engloba entre los miembros de la familia de los osos, ​ siendo el oso de anteojos su pariente más cercano, que pertenece a la subfamilia de los tremarctinos."
+      }
     ]
   },
   {
     "img": "../assets/images/img_10.jpg",
-    "title": "Mood Booster",
-    "description": "Get happy with today's dose of feel-good songs",
+    "title": "Mapache",
+    "description": "También denominado zorra manglera o gato manglatero",
     "song_count": "75 songs",
     "date": "3 hr 56 min",
     "song_url": "songs/2.mp3",
     "songs": [
-      {"title": "Imagination", "duration": "1:21"},
-      {"title": "Home_", "duration": "2:17"},
-      {"title": "Do I Wanna Know?", "duration": "1:31"},
-      {"title": "Whiskey Sour", "duration": "1:42"},
-      {"title": "Decisions", "duration": "1:29"},
-      {"title": "Trees", "duration": "1:51"},
-      {"title": "Earth", "duration": "1:39"},
+      {
+        "title":
+            "Procyon es un género de mamíferos carnívoros de la familia Procyonidae​ conocidos comúnmente como mapaches u osos lavadores. Son propios de América."
+      }
     ]
   }
 ];
